@@ -6,4 +6,6 @@ RUN apt -yqq install build-essential vim python3 python3-pip git ninja-build fle
 
 COPY config/bashrc /root/.bashrc
 
-RUN wget -O /usr/bin/tmux https://gitlab.com/extinct_potato/tmux/-/jobs/386867622/artifacts/raw/tmux
+RUN wget --quiet -O /usr/bin/tmux https://gitlab.com/extinct_potato/tmux/-/jobs/386867622/artifacts/raw/tmux
+
+RUN chmod +x /usr/bin/tmux
