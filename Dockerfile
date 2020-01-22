@@ -2,7 +2,7 @@ FROM debian:latest
 
 RUN apt -yqq update && apt -yqq upgrade
 
-RUN apt -yqq install build-essential vim python3 python3-pip git ninja-build flex htop man tig wget curl
+RUN apt -yqq install build-essential vim python3 python3-pip git ninja-build flex htop man tig wget curl autoconf
 
 COPY config/bashrc /root/.bashrc
 
